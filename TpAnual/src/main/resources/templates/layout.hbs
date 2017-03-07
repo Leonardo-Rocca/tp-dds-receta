@@ -1,0 +1,42 @@
+<html>
+  <head>
+    {{# block "titulo" }}
+    {{/block}}
+      </head>
+  <body>
+
+  <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet"  href="main.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand"href="/">¿Qué comemos?</a>
+      </div>
+      <div class>
+        <ul class="nav navbar-nav">
+          <li><a href="/recetas">Recetas</a></li>
+        </ul>
+      </div>
+      <div class = "pull-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/perfil"><i class="fa fa-user"></i> Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  {{# block "contenido" }}
+  {{/block}}
+  </div>
+  
+  <footer class="footer">
+    <p class="text-center">
+      &copy; 2015 ¿Qué comemos?
+    </p>
+  </footer>
+  </body>
+</html>

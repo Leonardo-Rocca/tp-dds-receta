@@ -1,0 +1,29 @@
+{{# partial "titulo" }}	
+	<title>Recetas</title>
+{{/partial}}
+		
+{{# partial "contenido" }}	  
+<div>
+  <h1 class = "text-center">Recetas</h1>	
+</div>	
+
+<div class="row">
+	<div class="col-md-12">	
+	<table class="table table-striped" >
+			<td><b>Nombre</b></td>
+		</hr>
+	{{#recetas}}
+		<tr>
+			<td><a class="btn btn-default" href="/receta/{{idReceta}}">{{nombre}}</a></td>
+		</tr>
+	{{/recetas}}				
+	</table>
+	</div>
+	<div class="pull-right">
+  <a class="btn btn-primary"   href="/recetas/new">Nueva Receta</a>
+</div>
+</div>
+
+{{/partial}}
+
+{{> layout.hbs }}

@@ -1,0 +1,27 @@
+{{# partial "contenido" }}  
+
+<h1 class = "text-center">Nueva Receta</h1>
+
+<form action="/recetas" method="POST">
+	<div>
+  <label for="nombre">Nombre</label>
+	<input type="text" name="nombre">
+	</div>
+	
+	<div>
+	<label for="temporada">Temporada</label>
+	<input type="text" name="temporada">
+	</div>
+	
+	<div>
+	<label for="dificultad">Dificultad</label>
+	<input type="text" name="dificultad">
+	</div>
+	
+	<input type="submit">
+</form>
+
+{{/partial}}
+
+
+{{> layout.hbs }}

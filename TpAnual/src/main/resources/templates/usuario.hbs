@@ -1,0 +1,27 @@
+{{# partial "titulo" }}	
+	<title>Perfil</title>
+{{/partial}}
+		
+{{# partial "contenido" }}
+
+<div>
+  <h1 class = "text-center">Perfil</h1>	
+</div>	
+
+	<div>
+		<p>Nombre: {{usuario.nombre}}</p>
+		<p>Sexo:   {{usuario.sexo}}</p>
+		<p>Peso:   {{usuario.peso}}</p>
+		<p>Altura: {{usuario.altura}}</p>
+		<p>IMC:    {{imc}}</p>
+		<p>Fecha de nacimiento: {{usuario.fechaDeNacimiento}}</p>
+		<p>Rutina: {{usuario.rutina}}</p>
+		<p>Preferencias alimenticias: {{usuario.preferenciasAlimenticias}}</p>
+		
+		
+	</div> 
+
+
+{{/partial}}
+
+{{> layout.hbs }}

@@ -1,0 +1,30 @@
+{{# partial "titulo" }}	
+	<title>¿Qué comemos? - {{nombre}}</title>
+{{/partial}}
+		
+{{# partial "contenido" }}	  
+<div>
+  <h1 class = "text-center">Detalle de la receta</h1>
+  <p>Nombre: {{nombre}} </p>
+  <p>Autor: {{autor.nombre}} </p>
+  <p>Temporada: {{temporada}} </p>
+  <p>Dificultad: {{dificultad}} </p>
+  <p>Inadecuado para:{{#paraQueCondicionesPreexistentesEsInadecuado}}
+  	<ul> <li>{{nombre}}</li> </ul>
+  {{/paraQueCondicionesPreexistentesEsInadecuado}}</p>
+  <p>Ingredientes:{{#ingredientes}}
+  	<ul> <li>{{nombre}}</li> </ul>
+  {{/ingredientes}}</p>
+  <p>Condimentos:{{#condimentos}}
+  	<ul> <li>{{nombre}}</li> </ul>
+  {{/condimentos}}</p>
+  <p>Preparación: {{preparacion}} </p>
+  <p>Calorias: {{calorias}} </p>
+  
+</div>	
+
+
+
+{{/partial}}
+
+{{> layout.hbs }}
